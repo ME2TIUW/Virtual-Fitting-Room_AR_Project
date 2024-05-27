@@ -5,6 +5,7 @@
   I Nicholas Matthew, personally created the whole website by myself on this project, whilst also helping with project management of the project.
 
   Here Are some of My Jobdesk in the Team Project : 
+  
   -Project management = i manage all the projects needed for the Virtual Fitting Room Augmented Reality Application to work. That includes the App itself that was built entirely in unity by my friend,
                         the physical clothes for AR detection, the documentation videos, and the website itself
 
