@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 =62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Does NOT work on Safari and Microsoft Edge */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+/* ******************************** */
+/* HEADER */
+/* ******************************** */
+
+.header {
+  align-items: center;
+  background-color: #e8ecf2;
+  display: flex;
+  justify-content: space-between;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  width: 25%;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #14407b;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  border-radius: 9px;
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #14407b;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #0e2d56;
+}
+
+/* ******************************** */
+/* MOBILE */
+/* ******************************** */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* ******************************** */
+/* STICKY NAVIGATION*/
+/* ******************************** */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #b9c6d7ab;
+  z-index: 99;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/* ******************************** */
+/* HERO SECTION */
+/* ******************************** */
+.hero-img {
+  width: 75%;
+}
+
+.section-hero {
+  background-color: #b9c6d7;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 75%;
+}
+
+.hero-cta-begin {
+  margin-bottom: 1rem;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/* TEMPORARY */
+.step-img {
+  width: 75%;
+}
+
+.step-number {
+  font-size: 4 rem;
+}
+
+.subheading {
+  margin-top: 2.4rem;
+}
+
+/* ******************************** */
+/*CREATORS SECTION*/
+/* ******************************** */
+.creators-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.creators {
+  padding: 2rem 2rem;
+  margin: 4.8rem;
+  justify-content: space-between;
+}
+
+.creator-text-name {
+  font-size: 2.4rem;
+  margin-top: 1.2rem;
+}
+
+.creator-text-nim {
+  font-size: 2rem;
+  margin-top: 1.2rem;
+}
+
+.creator {
+  display: inline-block;
+  padding: 2rem 2rem;
+  margin-left: auto;
+}
+
+.creator-kiki {
+  margin-right: 8.6rem;
+}
+
+/* VIDEO PAGE */
+.video {
+  margin-left: 3.6rem;
+}
+
+.heading-video {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
+.heading-video-profile {
+  color: #333;
+}
+
+/* FOOTER */
+footer {
+  padding: 1rem 1rem;
+}
+
+.btn--company {
+  margin-top: 0.8rem;
+}
+
+.copyright-text {
+  font-size: 1.6rem;
+}
